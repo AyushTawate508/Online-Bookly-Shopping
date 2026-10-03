@@ -4,93 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Book Shop</title>
-    <link rel="stylesheet" href="/Online-Bookly-Shopping/index.html">
+    <link rel="stylesheet" href="/Online-Bookly-Shopping/style/book.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-    <!-- logo navbar -->
+<!-- logo navbar -->
 <header class="header">
-    <div>
+        
+    <div class="header1">
+        <!-- Logo -->
         <div class="logo">
-            <a href="" class="logos"><i class="fas fa-book"> bookly</i></a>
+            <i class="fa-solid fa-book"></i>
+            BOOKLY
         </div>
-        <div class="icon">
-            <ul>
-                <form class="search-form">
-                <input type="search" name="" placeholder="search here..." id="search-box">
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
-                <a href=""><i class="fa-solid fa-heart"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href=""><i class="fa-solid fa-user"></i></a>
-            </ul>
+
+        <!-- Search -->
+        <div class="search-container">
+            <input type="text" placeholder="search here...">
+        </div>    
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
-    </div>
+
+        <!-- Icons -->
+        <div class="header-icons">
+            <a href="#"><i class="fa-solid fa-heart heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            <a href="#"><i class="fa-solid fa-user user"></i></a>
+        </div>
+
+    </div>      
 
     <!-- nav-bar -->
     <div class="navbar">
-        <a href="#">Categories</a>
-        <a href="#">Home</a>
-        <a href="#">Featured</a>
-        <a href="#">Arrivals</a>
-        <a href="#">Reviews</a>
-        <a href="#">Blogs</a>
+        <a href="#Categories">Categories</a>
+        <a href="#Home">Home</a>
+        <a href="#Featured">Featured</a>
+        <a href="#Arrivals">Arrivals</a>
+        <a href="#Reviews">Reviews</a>
+        <a href="#Blogs">Blogs</a>
     </div>
-</header>
+</header>    
+
 
 <!-- banner -->
-<section class="banner">
-    <div class="content">
-        <h1>upto 60% offers</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente eos quisquam voluptatibus, cum quod.</p>
-        <button class="btn"><a href="Shop Now"></a></button>
-    </div>
+<section class="home">
+    <div class="contain">
+        <div class="content">
+            <h1>upto 60% offers</h1>
+            <p class="cont">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Corrupti Sapiente Eos Quisquam Voluptatibus, Cum Quod.</p>
+            <button class="btn"><a href="Shop Now">Shop Now</a></button>
+        </div>
 
-    <div class="swiper">
-        <ul>
-            <li><img src="/Online-Bookly-Shopping/images/book-1.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-2.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book3.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-3.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-4.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book5.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-5.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-6.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book7.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-7.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-8.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-9.png"></li>
-            <li><img src="/Online-Bookly-Shopping/images/book-10.png"></li>
-        </ul>
-    </div>
+        <div class="list">
+            <div class="book-list">
+                <a href=""><img src="/Online-Bookly-Shopping/images/book-1.png"></a>
+                <a href=""><img src="/Online-Bookly-Shopping/images/book-2.png"></a>
+                <a href=""><img src="/Online-Bookly-Shopping/images/book3.png"></a>
+                <a href=""><img src="/Online-Bookly-Shopping/images/book-3.png"></a>
+                <a href=""><img src="/Online-Bookly-Shopping/images/book-4.png"></a>
+                <a href=""><img src="/Online-Bookly-Shopping/images/book5.png"></a>
+            </div>
+
+            <div class="stand">
+                <img src="/Online-Bookly-Shopping/images/stand.png">
+            </div>
+        </div>
+    </div>    
 </section>
 
 <!-- icon container -->
 <section class="icon-container">
     <div class="icon">
-        <div class="secure">
-            <i class="fa-solid fa-lock"> <br> </i>
-            <h2>Secure Payment</h2>
-            <p class="contain">Secure Payment $100</p>
-        </div>
-        <div class="call">
-            <i class="fa-solid fa-headset"></i>
-            <h2>24/7 support</h2>
-            <p class="contain">call us anytime</p>
+        <i class="fa-solid fa-lock"></i>
+    </div>
+    <div class="text"></div>
+            <h2 class="title">Secure Payment</h2>
+            <p class="subtitle">Secure Payment $100</p>
+    </div>
+    <div class="icon">
+        <i class="fa-solid fa-headset"></i>
+    </div>
+        <div>    
+            <h2 class="title">24/7 support</h2>
+            <p class="subtitle">call us anytime</p>
         </div>
     </div>
 </section>
 
 <!-- Featured Book -->
-<section class="Featured Book">
-    <h4>Featured Book</h4>
-    <div class="book1">
+<section class="featured-book">
+    <h4 class="feat">Featured Book</h4>
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-1.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-1.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -102,12 +113,12 @@
             </button>
         </div>
     </div>
-    <div class="book2">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-2.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-2.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -119,12 +130,12 @@
             </button>
         </div>
     </div>
-    <div class="book3">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book3.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book3.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -136,12 +147,12 @@
             </button>
         </div>
     </div>
-    <div class="book4">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-3.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-3.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -153,12 +164,12 @@
             </button>
         </div>
     </div>
-    <div class="book5">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-4.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-4.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -170,12 +181,12 @@
             </button>
         </div>
     </div>
-    <div class="book6">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book5.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book5.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -187,12 +198,12 @@
             </button>
         </div>
     </div>
-    <div class="book7">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-5.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-5.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -204,12 +215,12 @@
             </button>
         </div>
     </div>
-    <div class="book8">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-6.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-6.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -221,12 +232,12 @@
             </button>
         </div>
     </div>
-    <div class="book9">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book7.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book7.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -238,12 +249,12 @@
             </button>
         </div>
     </div>
-    <div class="book10">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-7.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-7.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -255,12 +266,12 @@
             </button>
         </div>
     </div>
-    <div class="book11">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-8.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-8.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -272,12 +283,12 @@
             </button>
         </div>
     </div>
-    <div class="book12">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-9.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-9.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -289,12 +300,12 @@
             </button>
         </div>
     </div>
-    <div class="book13">
+    <div class="book">
         <div class="icon">
             <a href="search"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="heart"><i class="fa-solid fa-heart"></i></a>
         </div>
-        <img src="/Online-Bookly-Shopping/images/book-10.png">
+        <a href><img src="/Online-Bookly-Shopping/images/book-10.png"></a>
         <div class="content">
             <h3>Featured Book</h3>
             <div class="price">
@@ -324,8 +335,8 @@
 <section class="new">
     <h4>New Arrivals</h4>
     <div class="new1">
-        <div class="book1">
-            <img src="/Online-Bookly-Shopping/images/book-1.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-1.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -341,8 +352,8 @@
                 </div>
             </div>    
         </div>
-        <div class="book2">
-            <img src="/Online-Bookly-Shopping/images/book-2.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-2.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -358,8 +369,8 @@
                 </div>
             </div>
         </div>
-        <div class="book3">
-            <img src="/Online-Bookly-Shopping/images/book3.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book3.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -375,8 +386,8 @@
                 </div>
             </div>
         </div>
-        <div class="book4">
-            <img src="/Online-Bookly-Shopping/images/book-3.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-3.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -392,8 +403,8 @@
                 </div>
             </div>
         </div>
-        <div class="book5">
-            <img src="/Online-Bookly-Shopping/images/book-4.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-4.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -409,8 +420,8 @@
                 </div>
             </div>
         </div>
-        <div class="book6">
-            <img src="/Online-Bookly-Shopping/images/book5.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book5.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -426,8 +437,8 @@
                 </div>
             </div>
         </div>
-        <div class="book7">
-            <img src="/Online-Bookly-Shopping/images/book-5.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-5.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -445,8 +456,8 @@
         </div>
     </div>
     <div class="new2">    
-        <div class="book8">
-            <img src="/Online-Bookly-Shopping/images/book-6.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-6.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -462,8 +473,8 @@
                 </div>
             </div>
         </div>
-        <div class="book9">
-            <img src="/Online-Bookly-Shopping/images/book7.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book7.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -479,8 +490,8 @@
                 </div>
             </div>
         </div>
-        <div class="book10">
-            <img src="/Online-Bookly-Shopping/images/book-7.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-7.png"></a>
             <div class="content">
                <h3>New Arrivals</h3>
                <div class="price">
@@ -496,8 +507,8 @@
                 </div>
             </div>
         </div>
-        <div class="book11">
-            <img src="/Online-Bookly-Shopping/images/book-8.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-8.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -513,8 +524,8 @@
                 </div>
             </div>
         </div>
-        <div class="book12">
-            <img src="/Online-Bookly-Shopping/images/book-9.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-9.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -530,8 +541,8 @@
                 </div>
             </div>
         </div>
-        <div class="book13">
-            <img src="/Online-Bookly-Shopping/images/book-10.png">
+        <div class="book">
+            <a href><img src="/Online-Bookly-Shopping/images/book-10.png"></a>
             <div class="content">
                 <h3>New Arrivals</h3>
                 <div class="price">
@@ -553,12 +564,12 @@
 <!-- Deals -->
 <section class="deals">
     <div class="left-deals">
-        <h5>deal of the day</h5>
-        <h1>upto 50% offers</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vero. Voluptatibus voluptates inventore nulla vel.</p>
-        <button class="btn"><a href="Shop Now"></a></button>
+        <h5>Deal Of The Day</h5>
+        <h1>Upto 50% Offers</h1>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dicta, Vero. Voluptatibus Voluptates Inventore Nulla Vel.</p>
+        <button class="btn2"><a href="Shop Now"></a></button>
     </div>   
-    <div class="right deal">
+    <div class="right deals">
         <img src="/Online-Bookly-Shopping/images/deal-img.jpg">
     </div> 
 </section>
@@ -569,7 +580,7 @@
     <div class="client1">
         <img src="/Online-Bookly-Shopping/images/pic-1.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -581,7 +592,7 @@
     <div class="client2">
         <img src="/Online-Bookly-Shopping/images/pic-2.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -593,7 +604,7 @@
     <div class="client3">
         <img src="/Online-Bookly-Shopping/images/pic-3.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -605,7 +616,7 @@
     <div class="client4">
         <img src="/Online-Bookly-Shopping/images/pic-4.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -617,7 +628,7 @@
     <div class="client5">
         <img src="/Online-Bookly-Shopping/images/pic-5.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -629,7 +640,7 @@
     <div class="client6">
         <img src="/Online-Bookly-Shopping/images/pic-6.png">
         <h3>John Deo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -646,95 +657,95 @@
     <div class="Blog1">
         <img src="/Online-Bookly-Shopping/images/pic-1.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
     <div class="Blog2">
         <img src="/Online-Bookly-Shopping/images/pic-2.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
     <div class="Blog3">
         <img src="/Online-Bookly-Shopping/images/pic-3.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
     <div class="Blog4">
         <img src="/Online-Bookly-Shopping/images/pic-4.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
     <div class="Blog5">
         <img src="/Online-Bookly-Shopping/images/pic-5.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
     <div class="Blog6">
         <img src="/Online-Bookly-Shopping/images/pic-6.png">
         <h3>Blog Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eligendi amet recusandae perferendis cumque nesciunt.</p>
+        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eaque Eligendi Amet Recusandae Perferendis Cumque Nesciunt.</p>
         <button class="btn"><a href="Read More"></a></button>
     </div>
 </section>
 
 <!-- Footer -->
-<footer>
-    <section class="location">
-        <h3>Our Locations</h3>
-        <ul>
-            <a href=""><i class="fa-solid fa-location-dot">India</i></a>
-            <a href=""><i class="fa-solid fa-location-dot">USA</i></a>
-            <a href=""><i class="fa-solid fa-location-dot">Russia</i></a>
-            <a href=""><i class="fa-solid fa-location-dot">France</i></a>
-            <a href=""><i class="fa-solid fa-location-dot">Japan</i></a>
-            <a href=""><i class="fa-solid fa-location-dot">Africa</i></a>
-        </ul>
-    </section>
+<footer class="footer">
+    <section class="box-container">
+        <div class="box">
+            <h3>Our Locations</h3>
+            <ul>
+                <a href=""><i class="fa-solid fa-location-dot">India</i></a>
+                <a href=""><i class="fa-solid fa-location-dot">USA</i></a>
+                <a href=""><i class="fa-solid fa-location-dot">Russia</i></a>
+                <a href=""><i class="fa-solid fa-location-dot">France</i></a>
+                <a href=""><i class="fa-solid fa-location-dot">Japan</i></a>
+                <a href=""><i class="fa-solid fa-location-dot">Africa</i></a>
+            </ul>
+        </div> 
 
-    <section class="link1">
-        <h3>Quick Link</h3>
-        <ul>
-            <a href=""><i class="fa-solid fa-arrow-right">Home</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Featured</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Arrivals</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Blogs</i></a>
-        </ul>
-    </section>
+        <div class="box">
+            <h3>Quick Link</h3>
+            <ul>
+                <a href=""><i class="fa-solid fa-arrow-right">Home</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Featured</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Arrivals</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Blogs</i></a>
+            </ul>
+        </div>    
+    
+        <div classd="box">
+            <h3>Extra Link</h3>
+            <ul>
+                <a href=""><i class="fa-solid fa-arrow-right">Account Info</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Ordered Items</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Privacy Policy</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Payment Method</i></a>
+                <a href=""><i class="fa-solid fa-arrow-right">Services</i></a>
+            </ul>
+        </div>    
 
-    <section class="link2">
-        <h3>Extra Link</h3>
-        <ul>
-            <a href=""><i class="fa-solid fa-arrow-right">Account Info</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Ordered Items</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Privacy Policy</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Payment Method</i></a>
-            <a href=""><i class="fa-solid fa-arrow-right">Services</i></a>
-        </ul>
-    </section>
+        <div class="box">
+            <h3>Contact Info</h3>
+                <a href=""><i class="fa-solid fa-phone">+123-356-546</i></a>
+                <a href=""><i class="fa-solid fa-phone">+123-134-879</i></a>
+                <a href=""><i class="fa-regular fa-envelope">Kashum@Gmil.Com</i></a>
+            <img src="/Online-Bookly-Shopping/images/worldmap.png">
+        </div>
 
-    <section class="info">
-        <h3>Contact Info</h3>
-        <a href=""><i class="fa-solid fa-phone">+123-356-546</i></a>
-        <a href=""><i class="fa-solid fa-phone">+123-134-879</i></a>
-        <a href=""><i class="fa-regular fa-envelope">Kashum@Gmil.Com</i></a>
-        <img src="/Online-Bookly-Shopping/images/worldmap.png">
-    </section>
+        <div class="share">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+        </div>
+    </section>    
 
-    <section class="share">
-        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-square-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
-    </section>
-
-    <section class=" Creater">
-        <p>Created by <span>Web Max Designer</span>|All Rights Reserved</p>
-    </section>
+    <section class=" Creater">Created by <span>Web Max Designer</span>|All Rights Reserved</section>
    
 </footer>
 </body>

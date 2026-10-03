@@ -1,36 +1,440 @@
-:root{
-    --orange:hsl(11, 100%, 64%);
-    --dark-color:#ff4500;
-    --black:#444;
-    --light-color:#666;
-    --border:0.1rem solid rgba(0,0,0,0.1);
-    --border-hover:0.1rem solid var(--black);
-    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-    transition: width none;
-}
-
-.logo{
+.header1 {
+    height: 85px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 9%;
-    background: #fff;
+    padding: 0 108px;
+    gap: 30px;
 }
 
-.logos{    
-    font-size: 2.5rem;
-    font-weight: bolder;
+.logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    color: #ff624d;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.logo-icon {
+    width: 25px;
+    height: 27px;
+    background: #ff624d;
+    border-radius: 4px;
+    margin-right: 7px;
+    position: relative;
+}
+
+
+.search-form {
+    height: 55px;
+    flex: 1;
+    max-width: 555px;
+    margin-left: 0;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 60px 0 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.header-icons {
+    margin-left: 115px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
     color: var(--black);
+}
+
+.header-icons i {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.navbar {
+    height: 52px;
+    background-color: #ff6347;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home{
+    background: url(https://image.freepik.com/free-vector/banner-abstract-geometric-white-background_172436-99.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.content{
+    align-items: center;
+    flex: 1 1 42rem;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.cont{
+    color: var(--light-color);
+    font-size: 15px;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: #ff6347;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+.home .contain .book-list{
+    flex: 1 1 42rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.home .contain .book-list a img{
+    height: 25rem;
+}   
+.home .contain .book-list a:hover img{
+    transform: scale(0.9);
+}
+
+.home .row .book-list .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+.list .stand{
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.icon-container {
+      display: flex;
+      align-items: center;
+      width: 280px;
+      height: 90px;
+      padding: 15px 20px;
+      gap: 18px;
+}
+
+
+.icon {
+    position: relative;
+    width: 45px;
+    height: 31px;
+    color: #ff654c;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-top: 8px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    color: #263746;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.subtitle {
+    color: #263746;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.feat{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.featured-book .book{
+    width: 25rem;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+}
+.featured-book .book a img{
+    padding: 1rem;
+    background:linear-gradient(15deg, #eee 30% , #fff 30.1%);
+    height: 25rem;
+}
+.featured-book .book .icon{
+    padding-bottom: var(--border-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffff;
+    z-index: 1;
+    transform: translateY(-100%);
+    border: var(--border);
+}
+.featured-book .book .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+.featured-book .book .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+.btn1{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: #ff6347;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.btn1 a{
+    color: #fff;
+    text-decoration: none;   
+}
+
+.newsletter{
+    background: url(../image/letter-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.newsletter form{
+    max-width: 55rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.newsletter form h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.7rem;
+    font-weight: normal;
+}
+
+.newsletter form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 0.5rem;
+    text-transform: none;
+}
+.new h4{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.new .new1 .book{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+    margin-top: 3rem;
+}
+.new .new1 .book a img{
+    padding: 1rem;
+    background:linear-gradient(15deg, #eee 30% , #fff 30.1%);
+    height: 15rem;
+}
+.new .new1 .book .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+.new .new1 .book .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+.new .new2 .book{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+    margin-top: 3rem;
+}
+.new .new2 .book a img{
+    padding: 1rem;
+    background:linear-gradient(15deg, #eee 30% , #fff 30.1%);
+    height: 15rem;
+}
+.new .new2 .book .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+.new .new2 .book .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+.deals{
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.deals .left-deals{
+    flex: 1 1 42rem;
+}
+
+.deals .right-deals{
+    flex: 1 1 42rem;
+}
+
+.deals .right-deals img{
+    width: 100%;
+}
+
+.deals .left-deals h5{
+    color: #ff6347;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.deals .left-deals h1{
+    color: var(--black);
+    font-size: 3rem;
+}
+
+.deals .left-deals p{
+    padding: 1rem 0;
+    color: var(--light-color);
+    font-size: 1rem;
+    line-height: 2;
+}
+.deals .left-deals .btn2{
+   margin-top: 1rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background: #ff6347;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.deals .left-deals .btn2 a{
+    color: #fff;
+    text-decoration: none; 
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    padding: 1rem 0 ;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box a i{
+    color: var(--orange);
+    padding-right: 0.5rem;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box .map{
+    width: 100%;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--orange);
+    margin: 0 0 0.3rem;
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background: var(--black);
+}
+.footer .creater{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .creater span{
+    color: var(--orange);
 }
